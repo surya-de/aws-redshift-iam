@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     'US_NAME' : 'suryatrial1',
     'GR_NAME' : 'trial',
     'GR_USERS' : ['surya'],
-    'PASSWORD' : "'ABCFqwer3456'",
+    'PASSWORD' : "",
     'OPTIONS' : {
       'DB_OPTN' : 'NOCREATEDB',       # CREATEDB/ NOCREATEDB
       'USER_OPTN' : '',
@@ -65,10 +65,10 @@ class RedshiftHandler:
     connection_params = {}
     # Configuration to connect.
     RS_PORT = 5439
-    RS_USER = 'autocr_trial'
-    DATABASE = 'dev'
-    CLUSTER_ID = 'surya-trial-2'
-    RS_HOST = 'surya-trial-2.cz7nw9bemlyf.us-west-2.redshift.amazonaws.com'
+    RS_USER = ''
+    DATABASE = ''
+    CLUSTER_ID = ''
+    RS_HOST = ''
     
     # Get temporary credentials.
     cluster_creds = client.get_cluster_credentials(DbUser = RS_USER,
